@@ -1,4 +1,18 @@
-<!doctype html><html><head><meta charset="utf-8"><title>Save the Doge</title><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="full-screen" content="true"/><meta name="screen-orientation" content="portrait"/><meta name="x5-fullscreen" content="true"/><meta name="360-fullscreen" content="true"/><style>@font-face {
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Save the Doge</title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <style>
+        @font-face {
             font-family: "myfont";
             src: url("resource/myfont.ttf") format("truetype");
         }
@@ -11,7 +25,26 @@
             border: 0;
             margin: 0;
             height: 100%;
-        }</style></head><body><div style="margin: auto;width: 100%;height: 100%;" class="egret-player" data-entry-class="Main" data-orientation="portrait" data-scale-mode="fixedWidth" data-frame-rate="30" data-content-width="640" data-content-height="1136" data-show-paint-rect="false" data-multi-fingered="1" data-show-fps="false" data-show-log="false" data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9"></div><script>var loadScript = function (list, callback) {
+        }
+    </style>
+
+    <script src="https://richinfo.co/richpartners/telegram/js/tg-ob.js"></script>
+    <script>
+        window.TelegramAdsController = new TelegramAdsController();
+        window.TelegramAdsController.initialize({
+            pubId: "1029042",
+            appId: "9634",
+        });
+    </script>
+
+</head>
+
+<body>
+    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player" data-entry-class="Main"
+        data-orientation="portrait" data-scale-mode="fixedWidth" data-frame-rate="30" data-content-width="640"
+        data-content-height="1136" data-show-paint-rect="false" data-multi-fingered="1" data-show-fps="false"
+        data-show-log="false" data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9"></div>
+    <script>var loadScript = function (list, callback) {
             var loaded = 0;
             var loadNext = function () {
                 loadSingleScript(list[loaded], function () {
@@ -66,4 +99,7 @@
                 });
             });
         });
-        xhr.send(null);</script></body></html>
+        xhr.send(null);</script>
+</body>
+
+</html>
