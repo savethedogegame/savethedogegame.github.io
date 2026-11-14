@@ -32,6 +32,26 @@
     <script src="https://w.tads.me/widget.js"></script>
     <div id="tads-container-13291"></div>
 
+    <script>
+        const adController = window.tads.init({
+            widgetId: 13291,
+            type: 'static',
+            debug: false,
+
+            onAdsNotFound: () => {
+                console.log('TADS: No ads found');
+            }
+        });
+
+        adController.loadAd()
+            .then(() => {
+                console.log('TADS: Ad loaded');
+                return adController.showAd();
+            })
+            .catch(err => {
+                console.error('TADS error:', err);
+            });
+    </script>
 </head>
 
 <body>
