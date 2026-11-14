@@ -1,17 +1,8 @@
-<!doctype html>
-<html>
+<!doctype html><html><head><meta charset="utf-8"><title>Save the Doge</title><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="full-screen" content="true"/><meta name="screen-orientation" content="portrait"/><meta name="x5-fullscreen" content="true"/><meta name="360-fullscreen" content="true"/><style>@font-face {
+            font-family: "myfont";
+            src: url("resource/myfont.ttf") format("truetype");
+        }
 
-<head>
-    <meta charset="utf-8">
-    <title>Save the Dog</title>
-    <meta name="viewport"
-        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="full-screen" content="true" />
-    <meta name="screen-orientation" content="auto" />
-    <meta name="x5-fullscreen" content="true" />
-    <meta name="360-fullscreen" content="true" />
-    <style>
         html,
         body {
             -ms-touch-action: none;
@@ -20,56 +11,7 @@
             border: 0;
             margin: 0;
             height: 100%;
-        }
-
-        /* 广告容器样式 */
-        #ad-container {
-            position: fixed;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 9999;
-            width: 728px;
-            /* 根据广告宽度调整 */
-            height: 90px;
-            /* 根据广告高度调整 */
-            background: transparent;
-        }
-    </style>
-
-
-
-</head>
-
-<body>
-
-
-    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player" data-entry-class="DogeMain"
-        data-orientation="auto" data-scale-mode="fixedHeight" data-frame-rate="30" data-content-width="640"
-        data-content-height="1136" data-show-paint-rect="false" data-multi-fingered="1" data-show-fps="false"
-        data-show-log="false" data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9"></div>
-
-    <script type="text/javascript">
-        atOptions = {
-            'key': '62988bd3a84f699028a00c5fe304f4ae',
-            'format': 'iframe',
-            'height': 90,
-            'width': 728,
-            'params': {}
-        };
-    </script>
-
-    <div id="ad-container">
-
-        <script type="text/javascript"
-            src="https://www.highperformanceformat.com/62988bd3a84f699028a00c5fe304f4ae/invoke.js"></script>
-
-    </div>
-
-
-    <script>
-
-        var loadScript = function (list, callback) {
+        }</style></head><body><div style="margin: auto;width: 100%;height: 100%;" class="egret-player" data-entry-class="Main" data-orientation="portrait" data-scale-mode="fixedWidth" data-frame-rate="30" data-content-width="640" data-content-height="1136" data-show-paint-rect="false" data-multi-fingered="1" data-show-fps="false" data-show-log="false" data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9"></div><script>var loadScript = function (list, callback) {
             var loaded = 0;
             var loadNext = function () {
                 loadSingleScript(list[loaded], function () {
@@ -124,7 +66,4 @@
                 });
             });
         });
-        xhr.send(null);</script>
-</body>
-
-</html>
+        xhr.send(null);</script></body></html>
